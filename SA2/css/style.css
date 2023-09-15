@@ -71,21 +71,3 @@ body{
     }
 }
 
-
-
-.img2 {
-    position: relative;
-    display: inline-block;
-}
-
-/* Estilize a imagem */
-.img2 img {
-    display: none; /* Inicialmente, oculte todas as imagens */
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilize o botão */
-.action-button {
-    cursor: pointer;
-}
