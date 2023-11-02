@@ -1,0 +1,11 @@
+.image-carousel img {
+    width: 150px; /* Define o tamanho desejado para as imagens */
+    height: 150px;
+    background-color: rgb(34, 31, 31);
+    }
+.image-carousel  {
+   margin: auto;
+    width: 20%; /* Define o tamanho desejado para as imagens */
+    height: 150px;
+    background-color: rgb(34, 31, 31);
+    }

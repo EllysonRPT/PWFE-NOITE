@@ -1,31 +1,15 @@
 <template>
-  <div id="app">
-    <header>
-      <h1>Meu Catálogo de Filmes</h1>
-    </header>
-    <main>
-
-      <CatalogoDeFilmes />
-      <CatalogoDeLivros />
-    </main>
-  </div>
-  <footer>
-    <h1>Minha Página com Vue.js</h1>
-  </footer>
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>|
+    <router-link to="/Livros">livros</router-link>|
+    <router-link to="/Filmes">filmes</router-link>|    
+    <router-link to="/Disco">Disco</router-link>|    
+  </nav>
+  <div><router-view/></div>
+  
 </template>
-  
-<script>
-import CatalogoDeFilmes from "@/components/CatalogoDeFilmes.vue";
-import CatalogoDeLivros from "./components/CatalogoDeLivros.vue";
 
-export default {
-  components: {
-    CatalogoDeFilmes,
-    CatalogoDeLivros
-  },
-};
-</script>
-  
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -33,22 +17,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 20px;
 }
 
-header {
-
-  background-color: #35495e;
-  color: #eeafaf;
-  padding: 10px 0;
+nav {
+  padding: 30px;
 }
 
-footer {
-  background-color: #35495e;
-  color: #bcebbf;
-  padding: 10px 0;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
