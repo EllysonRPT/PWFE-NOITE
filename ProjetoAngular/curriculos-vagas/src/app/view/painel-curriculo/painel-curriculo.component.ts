@@ -1,11 +1,11 @@
 // Importa os módulos e classes necessárias
 import { Component, OnInit } from '@angular/core';
-import { Vaga } from '../model/vaga.model';
-import { VagaService } from '../service/vagas.service';
+import { Vaga } from '../../model/vaga.model';
+import { VagaService } from '../../service/vagas.service';
 @Component({
-  selector: 'app-painel-vagas',
-  templateUrl: './painel-vagas.component.html',
-  styleUrls: ['./painel-vagas.component.css'],
+  selector: 'app-painel-curriculo',
+  templateUrl: './painel-curriculo.component.html',
+  styleUrls: ['./painel-curriculo.component.css'],
 })
 export class PainelVagasComponent implements OnInit {
   public vaga: Vaga = new Vaga(0, '', '', '', 0);
